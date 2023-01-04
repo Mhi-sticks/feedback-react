@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/feedback-react/static/css/main.31d6cfe0.css",
+    "main.js": "/feedback-react/static/js/main.131326a5.js",
+    "index.html": "/feedback-react/index.html",
+    "main.131326a5.js.map": "/feedback-react/static/js/main.131326a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.131326a5.js"
+  ]
+}
