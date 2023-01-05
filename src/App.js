@@ -1,25 +1,18 @@
-function App() {
-  const title = "blog post";
-  const body = "body post";
-  const comments = [
-    { id: 1, text: "coment one" },
-    { id: 1, text: "coment two" },
-    { id: 1, text: "coment three" },
-  ];
-  return (
-    <div className="container">
-      <h1> {title.toUpperCase()} </h1>
-      <p> {body} </p>
+import { useState } from "react";
+import Header from "./components/Header";
+import FeedbackList from "./components/FeedbackList";
+import FeedbackData from "./data/FeedbackData";
 
-      <div className="comments">
-        <h3>comments ({comments.length})</h3>
-        <ul>
-          {comments.map((comment, index) => (
-            <li key={index}>{comment.text}</li>
-          ))}
-        </ul>
+function App() {
+  const [feedback, setFeedback] = useState(FeedbackData);
+
+  return (
+    <>
+      <Header />
+      <div className="container">
+        <FeedbackList feedback={feedback} />
       </div>
-    </div>
+    </>
   );
 }
 
